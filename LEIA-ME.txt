@@ -1,0 +1,28 @@
+PokeXDD 1.2.0
+=============
+
+COMO INSTALAR NO OPERA / OPERA GX
+1. Extraia este .zip numa pasta fixa (ex.: Documentos\pokexdd). Não apague a pasta depois.
+2. Abra opera://extensions
+3. Ligue o "Modo do desenvolvedor" (canto superior direito).
+4. Clique em "Carregar sem compactação" e escolha a pasta extraída (a que tem o manifest.json).
+5. Abra/recarregue https://pokeidle.io/app — aparece a aba "PokeXDD" (com a pokébola) na lateral direita.
+
+Para atualizar: substitua os arquivos da pasta e clique em "Recarregar" no card da extensão (e F5 no jogo).
+
+O QUE TEM
+- Hunt: XP/h, coins/h, lucro real (variação do saldo), abates, capturas, taxa de captura, gastos de bolas, drops,
+  últimas capturas e histórico de sessões.
+- Alertas: shiny capturado, espécies que você marcar, som e notificação do Windows.
+- Mercado: lista de Pokémon/itens com menor preço em coins e gemas, alvo de preço, histórico e aviso quando aparece,
+  quando baixa e quando bate o seu alvo. Vigia automático opcional (desligado por padrão).
+- Progresso: nível, XP, coins, gemas, diamantes, Pokédex e Pokémon ao longo do tempo (ponto a cada 10 min de jogo).
+- Meus Pokémon: sua coleção com tipos, IV, qualidade e potência; clique para ver contra quem é forte e fraco.
+- Pokédex: todas as espécies, com filtros, status, evolução, golpes e o que falta registrar.
+- Tipos: a tabela de efetividade do jogo e um testador de combinação.
+
+SEGURANÇA
+- A extensão só lê as mensagens que o jogo já recebe. Ela não clica, não captura, não compra e não vende.
+- A única coisa que envia são consultas de leitura do mercado (as mesmas do botão Refresh), e só se você usar
+  "Checar agora" ou ligar o vigia automático.
+- Os dados ficam só no seu navegador.
