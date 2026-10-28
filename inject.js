@@ -7,7 +7,7 @@
   window.__picCarregado = true;
 
   const TAG = '__pic';
-  const VERSAO = '1.2.0';
+  const VERSAO = '1.3.0';
   const ICONE = 'data:image/png;base64,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';
 
   /* ============================================================
@@ -100,12 +100,14 @@
         vigiaAuto: false,
         vigiaMin: 5,
       },
-      vigiaCaptura: [], // [{speciesId, nome}]
+      vigiaCaptura: [], // legado (v1.2): migrado para regrasAlerta
+      regrasAlerta: [], // [{id, speciesId|null, nome, minP, minIV, minQ, minN, soShiny, ativo, disparos}]
       vigiaMercado: [], // [{chave, tipo:'pokemon'|'item', id, nome, alvoGold, alvoOrb}]
       mercado: {}, // chave -> {ultimo:{t, anuncios, minGold, minOrb}, menorGold, menorOrb, hist:[[t, minGold, minOrb, anuncios]]}
       progresso: [], // [{t, level, xp, gold, orbs, diamonds, dex, pks}]
       sessao: null,
       sessoesAntigas: [],
+      ritmo: [], // [[t, xp, gold]] a cada 30 s, últimas 6 h
       alertas: [], // [{t, titulo, corpo}]
       ultimaVigia: 0,
     },
@@ -137,6 +139,13 @@
         else S.store[k] = d[k];
       }
       S.carregado = true;
+      // Migração da v1.2: as espécies marcadas viram regras sem filtro.
+      if (S.store.vigiaCaptura?.length && !S.store.regrasAlerta.length) {
+        S.store.regrasAlerta = S.store.vigiaCaptura.map((v) => novaRegra({ speciesId: v.speciesId, nome: v.nome }));
+        S.store.vigiaCaptura = [];
+        salvar('regrasAlerta');
+        salvar('vigiaCaptura');
+      }
       renderizar();
     }
   });
@@ -266,6 +275,7 @@
         if (i && i.id != null && !S.itens.has(Number(i.id))) S.itens.set(Number(i.id), i);
       }
     } catch (_) { /* segue sem */ }
+    NOTA.resetar();
     renderizar();
   }
 
@@ -365,6 +375,115 @@
   const nomeItem = (id) => S.itens.get(Number(id))?.name ?? `Item #${id}`;
   const nomeBola = (id) => S.catalogoBolas.find((b) => b.id === id)?.nome ?? S.itens.get(Number(id))?.name ?? `Ball #${id}`;
   const precoBola = (id) => Number(S.catalogoBolas.find((b) => b.id === id)?.priceGold) || 0;
+  /* ---------------- NOTA (N) — cópia de shared/nota-pokemon.mjs + linhagem-nota.mjs do jogo ---------------- */
+  const NOTA = (() => {
+    const IV_MIN = 6, IV_MAX = 192, Q_MIN = 0.8, Q_MAX = 1.8, P_MIN = 1, P_MAX = 5;
+    const CHAVES = ['hp', 'atk', 'def', 'spAtk', 'spDef', 'speed'];
+    const EXPO = { hp: 0.95, atk: 0.8, def: 0.8, spAtk: 0.8, spDef: 0.8, speed: 0.95 };
+    const BONUS_P = [0, 0.05, 0.1, 0.25, 1];
+    const REF = { hp: 80, atk: 80, def: 80, spAtk: 80, spDef: 80, speed: 80 };
+    const lim = (v, a, b) => Math.min(b, Math.max(a, v));
+    const multNasc = (p, shiny) => (1 + (BONUS_P[(Math.round(p) || 1) - 1] ?? 0)) * (shiny ? 3 : 1);
+    function ivsDeSoma(soma) {
+      const s = lim(Math.round(Number(soma) || IV_MIN), IV_MIN, IV_MAX);
+      const med = Math.floor(s / 6);
+      const ivs = Object.fromEntries(CHAVES.map((k) => [k, med]));
+      for (let i = 0; i < s - med * 6; i++) ivs[CHAVES[i % 6]]++;
+      return ivs;
+    }
+    const basesDe = (b) => (b ? {
+      hp: b.hp ?? b.baseHp ?? 80, atk: b.atk ?? b.baseAtk ?? 80, def: b.def ?? b.baseDef ?? 80,
+      spAtk: b.spAtk ?? b.baseSpAtk ?? 80, spDef: b.spDef ?? b.baseSpDef ?? 80, speed: b.speed ?? b.baseSpeed ?? 80,
+    } : REF);
+    function soma({ iv, ivs, qualidade, potencia, shiny = false, bases }) {
+      const b = basesDe(bases);
+      const v = ivs ?? ivsDeSoma(iv);
+      const q = lim(Number(qualidade) || 1, Q_MIN, Q_MAX);
+      const p = lim(Math.round(Number(potencia) || P_MIN), P_MIN, P_MAX);
+      const m = multNasc(p, shiny);
+      let s = 0;
+      for (const k of CHAVES) s += Math.round((b[k] + 2 * (Number(v[k]) || 1)) * (q ** EXPO[k]) * m);
+      return s;
+    }
+    function limitesForca(bases) {
+      const min = soma({ iv: IV_MIN, qualidade: Q_MIN, potencia: P_MIN, bases });
+      const max = soma({ iv: IV_MAX, qualidade: Q_MAX, potencia: P_MAX, shiny: true, bases });
+      return { min: Math.max(1, min), max: Math.max(min + 1, max) };
+    }
+    const LIM_REF = limitesForca(null);
+    function notaDeForca(s, l) {
+      const v = lim(Number(s) || l.min, l.min, l.max);
+      if (l.max <= l.min) return 0;
+      const bruta = (10 * (Math.log(Math.max(1, v)) - Math.log(l.min))) / (Math.log(l.max) - Math.log(l.min));
+      return Math.round(lim(bruta, 0, 10) * 1000) / 1000;
+    }
+    const score = (args) => lim(notaDeForca(soma({ iv: IV_MIN, qualidade: Q_MIN, potencia: P_MIN, ...args }), LIM_REF) / 10, 0, 1);
+    function limitesScore(bases) {
+      const min = score({ iv: IV_MIN, qualidade: Q_MIN, potencia: P_MIN, bases });
+      const max = score({ iv: IV_MAX, qualidade: Q_MAX, potencia: P_MAX, shiny: true, bases });
+      return { min, max: Math.max(min, max) };
+    }
+    function notaDeScore(s, { min, max }) {
+      const v = lim(Number(s) || min, min, max);
+      if (max <= min) return 0;
+      return Math.round(((10 * (v - min)) / (max - min)) * 1000) / 1000;
+    }
+    // Ancestrais pela cadeia `evolvesToId` (a do jogo também segue ramificações; aqui é a cadeia simples).
+    let paisDe = null;
+    function ancestrais(esp) {
+      if (!paisDe) {
+        paisDe = new Map();
+        for (const e of S.especies.values()) {
+          if (e.evolvesToId && e.evolvesToId !== e.pokeId) {
+            if (!paisDe.has(e.evolvesToId)) paisDe.set(e.evolvesToId, new Set());
+            paisDe.get(e.evolvesToId).add(e.pokeId);
+          }
+        }
+      }
+      const out = [];
+      const vistos = new Set([esp.pokeId]);
+      let camada = [...(paisDe.get(esp.pokeId) ?? [])];
+      for (let passos = 1; passos <= 12 && camada.length; passos++) {
+        const prox = [];
+        for (const id of camada) {
+          if (vistos.has(id)) continue;
+          vistos.add(id);
+          const e = S.especies.get(id);
+          if (e && ['baseHp', 'baseAtk', 'baseDef', 'baseSpAtk', 'baseSpDef', 'baseSpeed'].every((k) => Number(e[k]) > 0)) out.push({ bases: e, passos });
+          for (const pai of paisDe.get(id) ?? []) prox.push(pai);
+        }
+        camada = prox;
+      }
+      return out;
+    }
+    function notaDePokemon(pk) {
+      if (!pk) return null;
+      if (Number.isFinite(Number(pk.nota)) && pk.nota !== null) return Number(pk.nota);
+      const iv = pk.iv ?? pk.ivTotal ?? (pk.ivs ? Object.values(pk.ivs).reduce((s, v) => s + (Number(v) || 0), 0) : null);
+      if (iv == null || !Number.isFinite(Number(iv))) return null;
+      const esp = especieDe(pk);
+      const r = pk.refino || {};
+      const bases = esp ? {
+        hp: (esp.baseHp ?? 0) + (Number(r.hp) || 0), atk: (esp.baseAtk ?? 0) + (Number(r.atk) || 0),
+        def: (esp.baseDef ?? 0) + (Number(r.def) || 0), spAtk: (esp.baseSpAtk ?? 0) + (Number(r.spAtk) || 0),
+        spDef: (esp.baseSpDef ?? 0) + (Number(r.spDef) || 0), speed: esp.baseSpeed ?? 0,
+      } : null;
+      const args = {
+        iv: Math.round(Number(iv)), ivs: pk.ivs, qualidade: Number(pk.quality ?? pk.qualidade) || 1,
+        potencia: lim(Number(pk.potencia) || 1, P_MIN, P_MAX), shiny: !!pk.shiny,
+      };
+      let n = notaDeScore(score({ ...args, bases }), limitesScore(esp ?? null));
+      for (const { bases: b, passos } of esp ? ancestrais(esp) : []) {
+        const na = notaDeScore(score({ ...args, bases: b }), limitesScore(b));
+        const piso = Math.min(10, na + (Number(passos) || 1) * 0.1);
+        if (piso > n) n = piso;
+      }
+      return Math.round(n * 1000) / 1000;
+    }
+    return { notaDePokemon, resetar: () => { paisDe = null; } };
+  })();
+  const notaDe = (p) => NOTA.notaDePokemon(p);
+
   function ivTotal(p) {
     if (!p) return null;
     const direto = p.ivTotal ?? p.iv;
@@ -386,6 +505,14 @@
       s.xpInicio = Number(eu.xp) || null;
     }
     const agora = Date.now();
+    const r = S.store.ritmo;
+    const ult = r[r.length - 1];
+    if (Number.isFinite(Number(eu.xp)) && (!ult || agora - ult[0] >= 30_000)) {
+      r.push([agora, Number(eu.xp), Number(eu.gold) || 0]);
+      const corte = agora - 6 * 3600_000;
+      while (r.length && r[0][0] < corte) r.shift();
+      salvarDepois('ritmo', 30_000);
+    }
     if (agora - ultimoSnapshotProgresso > 10 * 60_000) {
       ultimoSnapshotProgresso = agora;
       registrarProgresso();
@@ -510,24 +637,61 @@
     salvarDepois('sessao', 5000);
   }
 
+  function novaRegra(r = {}) {
+    return {
+      id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
+      speciesId: r.speciesId ?? null, nome: r.nome ?? 'Qualquer Pokémon',
+      minP: Number(r.minP) || 0, minIV: Number(r.minIV) || 0, minQ: Number(r.minQ) || 0, minN: Number(r.minN) || 0,
+      soShiny: !!r.soShiny, ativo: r.ativo ?? true, disparos: 0,
+    };
+  }
+  function medidas(p) {
+    return {
+      p: Number(p.potencia) || 1,
+      iv: ivTotal(p),
+      q: Number(p.quality ?? p.qualidade) || null,
+      n: notaDe(p),
+      shiny: !!p.shiny,
+    };
+  }
+  function regraBate(r, p, m) {
+    if (!r.ativo) return false;
+    if (r.speciesId != null && Number(r.speciesId) !== Number(p.speciesId)) return false;
+    if (r.soShiny && !m.shiny) return false;
+    if (r.minP && m.p < r.minP) return false;
+    if (r.minIV && (m.iv == null || m.iv < r.minIV)) return false;
+    if (r.minQ && (m.q == null || m.q < r.minQ)) return false;
+    if (r.minN && (m.n == null || m.n < r.minN)) return false;
+    return true;
+  }
+  const textoMedidas = (p, m) => [`Nv ${fmt(p.level)}`, `P${m.p}`, m.iv != null ? `IV ${fmt(m.iv)}` : '',
+    m.q ? `Q ${m.q.toFixed(3).replace('.', ',')}` : '', m.n != null ? `N ${m.n.toFixed(3).replace('.', ',')}` : ''].filter(Boolean).join(' · ');
+
   function aoCapturar(s, e) {
     const p = e.pokemon ?? {};
+    const m = medidas(p);
     s.capturas++;
     if (p.shiny) s.shinies++;
     s.ultimasCapturas.unshift({
       t: Date.now(), nome: p.nome ?? nomeEspecie(p.speciesId), speciesId: p.speciesId, level: p.level, look: lookDe(p),
-      shiny: !!p.shiny, quality: p.quality ?? p.qualidade, iv: ivTotal(p), potencia: p.potencia, depot: !!e.paraDepot,
+      shiny: !!p.shiny, quality: m.q, iv: m.iv, potencia: m.p, nota: m.n, depot: !!e.paraDepot,
     });
     s.ultimasCapturas = s.ultimasCapturas.slice(0, 30);
     const cfg = S.store.config;
     const nome = p.nome ?? nomeEspecie(p.speciesId);
-    const detalhes = [`Nv ${fmt(p.level)}`, ivTotal(p) != null ? `IV ${fmt(ivTotal(p))}` : '', p.quality ? `Q ${Number(p.quality).toFixed(3)}` : '']
-      .filter(Boolean).join(' · ');
+    const extra = { look: lookDe(p), medidas: m, nome, speciesId: p.speciesId, level: p.level, shiny: !!p.shiny };
+    const corpo = `${textoMedidas(p, m)}${e.paraDepot ? ' · foi para o Depot' : ''}`;
     if (p.shiny && cfg.alertaShiny) {
-      alertar(`✨ SHINY capturado: ${nome}!`, `${detalhes}${e.paraDepot ? ' · foi para o Depot' : ''}`, 'shiny');
-    } else if (cfg.alertaEspecies && S.store.vigiaCaptura.some((v) => Number(v.speciesId) === Number(p.speciesId))) {
-      alertar(`🎯 Você capturou ${nome}`, detalhes, 'captura');
+      alertar(`✨ SHINY capturado: ${nome}!`, corpo, 'shiny', extra);
+      return;
     }
+    if (!cfg.alertaEspecies) return;
+    const bateu = S.store.regrasAlerta.filter((r) => regraBate(r, p, m));
+    if (!bateu.length) return;
+    for (const r of bateu) r.disparos = (r.disparos || 0) + 1;
+    salvarDepois('regrasAlerta');
+    const destaque = m.n != null && bateu.some((r) => r.minN) ? ` · N ${m.n.toFixed(2).replace('.', ',')}` : '';
+    alertar(`🎯 ${nome}${destaque} — bateu sua regra`, corpo, 'captura', { ...extra, regra: bateu[0].id });
   }
 
   /* ============================================================
@@ -554,8 +718,8 @@
       });
     } catch (_) { /* sem som */ }
   }
-  function alertar(titulo, corpo, tipo = 'info') {
-    S.store.alertas.unshift({ t: Date.now(), titulo, corpo, tipo });
+  function alertar(titulo, corpo, tipo = 'info', extra = null) {
+    S.store.alertas.unshift({ t: Date.now(), titulo, corpo, tipo, ...(extra ? { x: extra } : {}) });
     S.store.alertas = S.store.alertas.slice(0, 80);
     salvarDepois('alertas');
     bipe(tipo);
@@ -738,6 +902,64 @@
     const pts = v.map((x, i) => `${((i / (v.length - 1)) * w).toFixed(1)},${(h - 3 - ((x - min) / amp) * (h - 6)).toFixed(1)}`).join(' ');
     return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" class="spark"><polyline fill="none" stroke="${cor}" stroke-width="2" points="${pts}"/></svg>`;
   }
+  function graficoArea(pts, cor, rotulo) {
+    // pts: [[t, valor]]
+    if (pts.length < 2) return '<div class="vazio peq">Ainda juntando dados — volte em alguns minutos.</div>';
+    const W = 460, H = 170, ml = 52, mr = 10, mt = 10, mb = 24;
+    const ts = pts.map((p) => p[0]); const vs = pts.map((p) => p[1]);
+    let min = Math.min(...vs), max = Math.max(...vs);
+    if (min === max) { min -= 1; max += 1; }
+    const pad = (max - min) * 0.08; min -= pad; max += pad;
+    const t0 = ts[0], t1 = ts[ts.length - 1] || t0 + 1;
+    const X = (t) => ml + ((t - t0) / Math.max(1, t1 - t0)) * (W - ml - mr);
+    const Y = (v) => mt + (1 - (v - min) / (max - min)) * (H - mt - mb);
+    const linha = pts.map((p) => `${X(p[0]).toFixed(1)},${Y(p[1]).toFixed(1)}`).join(' ');
+    const area = `${ml},${H - mb} ${linha} ${X(t1).toFixed(1)},${H - mb}`;
+    const id = 'g' + Math.random().toString(36).slice(2, 7);
+    const vistos = new Set();
+    const grade = [0, 0.25, 0.5, 0.75, 1].map((f) => {
+      const v = min + (max - min) * f; const y = Y(v);
+      const txt = curto(v);
+      const rotuloY = vistos.has(txt) ? '' : `<text x="${ml - 6}" y="${y + 3}" text-anchor="end" class="gt">${txt}</text>`;
+      vistos.add(txt);
+      return `<line x1="${ml}" x2="${W - mr}" y1="${y}" y2="${y}" class="gl"/>${rotuloY}`;
+    }).join('');
+    const marcasX = [0, 0.5, 1].map((f) => {
+      const t = t0 + (t1 - t0) * f;
+      const mesmoDia = new Date(t0).toDateString() === new Date(t1).toDateString();
+      const txt = mesmoDia ? hora(t) : dataHora(t);
+      return `<text x="${X(t)}" y="${H - 6}" text-anchor="${f === 0 ? 'start' : f === 1 ? 'end' : 'middle'}" class="gt">${txt}</text>`;
+    }).join('');
+    const passo = Math.max(1, Math.floor(pts.length / 60));
+    const alvos = pts.filter((_, i) => i % passo === 0 || i === pts.length - 1).map((p) =>
+      `<circle cx="${X(p[0]).toFixed(1)}" cy="${Y(p[1]).toFixed(1)}" r="7" class="alvo"><title>${dataHora(p[0])} — ${rotulo}: ${fmt(p[1])}</title></circle>`).join('');
+    const ultimo = pts[pts.length - 1];
+    return `<svg viewBox="0 0 ${W} ${H}" class="graf2">
+      <defs><linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${cor}" stop-opacity=".45"/><stop offset="1" stop-color="${cor}" stop-opacity="0"/></linearGradient></defs>
+      ${grade}${marcasX}
+      <polygon points="${area}" fill="url(#${id})"/>
+      <polyline points="${linha}" fill="none" stroke="${cor}" stroke-width="2.2" stroke-linejoin="round"/>
+      <circle cx="${X(ultimo[0])}" cy="${Y(ultimo[1])}" r="4" fill="${cor}" stroke="#241820" stroke-width="2"/>
+      ${alvos}
+    </svg>`;
+  }
+  function graficoBarras(barras, cor, rotulo) {
+    // barras: [{rot, v, dica}]
+    if (!barras.length) return '<div class="vazio peq">Sem dados ainda.</div>';
+    const W = 460, H = 150, ml = 52, mr = 6, mt = 8, mb = 22;
+    const max = Math.max(0, ...barras.map((b) => b.v)); const min = Math.min(0, ...barras.map((b) => b.v));
+    const amp = max - min || 1;
+    const Y = (v) => mt + (1 - (v - min) / amp) * (H - mt - mb);
+    const larg = (W - ml - mr) / Math.max(barras.length, 12);
+    const zero = Y(0);
+    const grade = [min, min + amp / 2, max].map((v) => `<line x1="${ml}" x2="${W - mr}" y1="${Y(v)}" y2="${Y(v)}" class="gl"/><text x="${ml - 6}" y="${Y(v) + 3}" text-anchor="end" class="gt">${curto(v)}</text>`).join('');
+    const cada = Math.ceil(barras.length / 8);
+    return `<svg viewBox="0 0 ${W} ${H}" class="graf2">${grade}
+      ${barras.map((b, i) => { const x = ml + i * larg + larg * 0.15; const y = Math.min(Y(b.v), zero); const h = Math.max(1, Math.abs(Y(b.v) - zero));
+        return `<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${(larg * 0.7).toFixed(1)}" height="${h.toFixed(1)}" rx="2" fill="${b.v < 0 ? '#ff6b6b' : cor}"><title>${esc(b.dica)} — ${rotulo}: ${b.v >= 0 ? '+' : ''}${fmt(b.v)}</title></rect>
+          ${i % cada === 0 ? `<text x="${(x + larg * 0.35).toFixed(1)}" y="${H - 6}" text-anchor="middle" class="gt">${esc(b.rot)}</text>` : ''}`; }).join('')}
+    </svg>`;
+  }
   function grafico(pontos, campo, cor) {
     const v = pontos.map((p) => p[campo]);
     if (v.length < 2) return '<div class="dim">Ainda juntando dados (um ponto a cada 10 min de jogo).</div>';
@@ -862,6 +1084,58 @@
   .st i { height: 7px; background: #1b1218; border-radius: 4px; overflow: hidden; }
   .st i b { display: block; height: 100%; border-radius: 4px; }
   .st em { font-style: normal; text-align: right; color: #fff; font-weight: 700; }
+  .sw-grade { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .sw-card { display: flex; align-items: center; gap: 10px; padding: 10px; border-radius: 12px; cursor: pointer;
+    background: #2e1f2a; border: 1px solid #4a2c44; transition: background .15s, border-color .15s; }
+  .sw-card.on { background: linear-gradient(135deg,#3b2468,#2e1f2a); border-color: #7b4dff; }
+  .sw-card input { display: none; }
+  .sw-ico { font-size: 22px; width: 34px; height: 34px; display: grid; place-items: center; background: #ffffff12; border-radius: 10px; }
+  .sw-txt { flex: 1; min-width: 0; } .sw-txt b { display: block; font-size: 13px; color: #fff; } .sw-txt small { color: #b89cb0; font-size: 11px; }
+  .sw { position: relative; flex: none; width: 34px; height: 20px; border-radius: 99px; background: #4a3a48; transition: background .15s; display: inline-block; cursor: pointer; }
+  .sw i { position: absolute; top: 3px; left: 3px; width: 14px; height: 14px; border-radius: 50%; background: #fff; transition: left .15s; }
+  .sw-card.on .sw, .sw.mini:has(input:checked) { background: #6be38f; }
+  .sw-card.on .sw i, .sw.mini:has(input:checked) i { left: 17px; }
+  .sw.mini input { display: none; }
+  .form-regra { background: linear-gradient(135deg,#2f1d36,#261922); border: 1px solid #5a3a6b; border-radius: 14px; padding: 12px; }
+  .fr-topo { display: flex; gap: 12px; align-items: center; }
+  .fr-arte { width: 64px; height: 64px; flex: none; border-radius: 50%; display: grid; place-items: center; background: radial-gradient(circle,#7b4dff55,transparent 70%); }
+  .fr-qualquer { font-size: 30px; color: #ffd166; filter: drop-shadow(0 0 6px #ffd16699); } .fr-qualquer.peq { font-size: 22px; }
+  .fr-campos { flex: 1; display: flex; flex-direction: column; gap: 4px; } .fr-campos input { width: 100%; }
+  .rot-c { font-size: 10px; text-transform: uppercase; letter-spacing: .8px; color: #c9a8ff; font-weight: 700; } .rot-c small { text-transform: none; letter-spacing: 0; color: #9b8597; font-weight: 400; }
+  .fr-grade { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 10px; }
+  .fr-grade label { display: flex; flex-direction: column; gap: 4px; } .fr-grade input, .fr-grade select { width: 100%; }
+  .regras { display: grid; gap: 8px; }
+  .regra { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 12px; background: #2e1f2a; border: 1px solid #4a2c44; }
+  .regra.off { opacity: .5; }
+  .rg-arte { width: 48px; height: 48px; flex: none; border-radius: 50%; display: grid; place-items: center; background: radial-gradient(circle,#ffffff14,transparent 70%); }
+  .rg-info { flex: 1; min-width: 0; } .rg-nome { font-weight: 800; color: #fff; }
+  .rg-crit { display: flex; flex-wrap: wrap; gap: 4px; margin: 3px 0; }
+  .crit { font-size: 11px; font-weight: 700; padding: 2px 7px; border-radius: 99px; background: #4b2f7a; color: #eadcff; }
+  .crit.nota { background: #1f6b4a; color: #c9ffe3; } .crit.shiny { background: #6b5200; color: #ffe27a; } .crit.livre { background: #3b2636; color: #c7b3c2; }
+  .x-peq { background: none; border: none; color: #ff8a8a; cursor: pointer; font-size: 14px; padding: 4px; }
+  .avisos { display: grid; gap: 6px; margin-top: 8px; }
+  .aviso-it { display: flex; align-items: center; gap: 10px; padding: 7px 10px; border-radius: 10px; background: #2b1d28; border-left: 3px solid #7b4dff; }
+  .aviso-it.shiny { border-left-color: #ffd166; background: linear-gradient(90deg,#3a2c08,#2b1d28 60%); }
+  .aviso-it.mercado { border-left-color: #3ecf8e; } .aviso-it.captura { border-left-color: #8b65ff; }
+  .av-arte { width: 42px; height: 42px; flex: none; display: grid; place-items: center; } .av-ico { font-size: 22px; }
+  .av-info { flex: 1; min-width: 0; } .av-info b { color: #fff; font-size: 13px; }
+  .av-hora { text-align: right; font-size: 11px; color: #d9c8e4; white-space: nowrap; }
+  .ritmo { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 8px; }
+  .rt { border-radius: 12px; padding: 10px 12px; background: #2e1f2a; border: 1px solid #4a2c44; }
+  .rt .rot { font-size: 10px; text-transform: uppercase; letter-spacing: .8px; color: #b89cb0; }
+  .rt .val { font-size: 24px; font-weight: 900; color: #fff; margin: 2px 0; } .rt .sub { font-size: 11px; color: #c7b3c2; }
+  .rt.xp { background: linear-gradient(135deg,#3a2468,#2e1f2a); border-color: #6b4fc4; }
+  .rt.gold { background: linear-gradient(135deg,#4a3a10,#2e1f2a); border-color: #8a6d1d; }
+  .rt.nivel { background: linear-gradient(135deg,#17483a,#2e1f2a); border-color: #2c7a5e; }
+  .seg { margin-top: 6px; }
+  .graf-card { background: #2a1b26; border: 1px solid #4a2c44; border-radius: 12px; padding: 8px 8px 4px; margin: 8px 0; }
+  .graf-tit { font-size: 12px; font-weight: 700; color: #eadff0; margin: 0 0 4px 4px; }
+  svg.graf2 { width: 100%; height: auto; display: block; overflow: visible; }
+  svg.graf2 .gl { stroke: #ffffff14; stroke-width: 1; } svg.graf2 .gt { fill: #9b8597; font-size: 10px; font-family: system-ui, sans-serif; }
+  svg.graf2 .alvo { fill: transparent; cursor: crosshair; } svg.graf2 .alvo:hover { fill: #ffffff55; }
+  svg.graf2 rect:hover { filter: brightness(1.25); }
+  .vazio.peq { padding: 14px 8px; font-size: 12px; }
+  details.diag { margin-top: 16px; } details.diag summary { cursor: pointer; color: #9b8597; font-size: 12px; }
   `;
 
   function montarUI() {
@@ -953,6 +1227,7 @@
   // A aba Hunt se atualiza a cada segundo; com o painel fechado só o selo de status muda.
   setInterval(() => {
     if (!S.ui.aberto || S.ui.aba === 'hunt') renderizar();
+    else if (S.ui.aba === 'progresso' && Date.now() % 15000 < 1000) renderizar();
   }, 1000);
 
   /* ---------------- HUNT ---------------- */
@@ -1006,8 +1281,8 @@
       <h3>Drops</h3>
       ${drops.length ? drops.map(([n, q]) => `<span class="pill">${esc(n)} ×${fmt(q)}</span>`).join(' ') : '<div class="dim">Nenhum drop ainda.</div>'}
       <h3>Últimas capturas</h3>
-      ${s.ultimasCapturas.length ? `<table><tr><th>Hora</th><th>Pokémon</th><th>Nv</th><th>IV</th><th>Q</th></tr>
-        ${s.ultimasCapturas.map((c) => `<tr><td>${hora(c.t)}</td><td class="com-spr">${imgSprite(c.look ?? lookDe({ speciesId: c.speciesId, shiny: c.shiny }), 28)}${c.shiny ? '<span class="pill shiny">✨ shiny</span>' : ''}${esc(c.nome)}${c.depot ? ' <span class="dim">(depot)</span>' : ''}</td><td>${fmt(c.level)}</td><td>${fmt(c.iv)}</td><td>${c.quality ? Number(c.quality).toFixed(3) : '—'}</td></tr>`).join('')}</table>`
+      ${s.ultimasCapturas.length ? `<table><tr><th>Hora</th><th>Pokémon</th><th>Nv</th><th>IV</th><th>Q</th><th>N</th></tr>
+        ${s.ultimasCapturas.map((c) => `<tr><td>${hora(c.t)}</td><td class="com-spr">${imgSprite(c.look ?? lookDe({ speciesId: c.speciesId, shiny: c.shiny }), 28)}${c.shiny ? '<span class="pill shiny">✨ shiny</span>' : ''}${esc(c.nome)}${c.depot ? ' <span class="dim">(depot)</span>' : ''}</td><td>${fmt(c.level)}</td><td>${fmt(c.iv)}</td><td>${c.quality ? Number(c.quality).toFixed(3) : '—'}</td><td>${c.nota != null ? Number(c.nota).toFixed(2) : '—'}</td></tr>`).join('')}</table>`
         : '<div class="dim">Nenhuma captura nesta sessão.</div>'}
       <h3>Sessões anteriores</h3>
       ${antigas.length ? `<table><tr><th>Início</th><th>Ativo</th><th>XP/h</th><th>Lucro</th><th>Capt.</th><th>✨</th></tr>
@@ -1034,31 +1309,93 @@
   function opcoesEspecies() {
     return [...S.especies.values()].sort((a, b) => a.name.localeCompare(b.name)).map((c) => `<option value="${esc(c.name)}">`).join('');
   }
+  const decimal = (v, casas = 3) => Number(v).toFixed(casas).replace('.', ',');
+  function chipsRegra(r) {
+    const c = [];
+    if (r.soShiny) c.push('<span class="crit shiny">✨ Só shiny</span>');
+    if (r.minP) c.push(`<span class="crit">P${r.minP}${r.minP < 5 ? '+' : ''}</span>`);
+    if (r.minIV) c.push(`<span class="crit">IV ≥ ${fmt(r.minIV)}</span>`);
+    if (r.minQ) c.push(`<span class="crit">Q ≥ ${decimal(r.minQ, 2)}</span>`);
+    if (r.minN) c.push(`<span class="crit nota">N ≥ ${decimal(r.minN, 2)}</span>`);
+    return c.length ? c.join('') : '<span class="crit livre">qualquer captura</span>';
+  }
+  function selosMedidas(m) {
+    if (!m) return '';
+    const out = [];
+    if (m.p) out.push(`<span class="selo t${Math.min(4, Math.max(0, m.p - 1))}">P${m.p}</span>`);
+    if (m.iv != null) out.push(`<span class="selo t${nivelSelo(m.iv, [60, 100, 130, 150])}">IV ${fmt(m.iv)}</span>`);
+    if (m.q) out.push(`<span class="selo t${nivelSelo(m.q, [1.0, 1.3, 1.5, 1.7])}">Q ${decimal(m.q)}</span>`);
+    if (m.n != null) out.push(`<span class="selo t${nivelSelo(m.n, [2, 3, 3.5, 4.5])}">N ${decimal(m.n)}</span>`);
+    return out.join('');
+  }
   function telaAlertas() {
     const c = S.store.config;
-    const tg = (k, txt) => `<label class="tg"><input type="checkbox" data-cfg="${k}" ${c[k] ? 'checked' : ''}> ${txt}</label>`;
-    const vc = S.store.vigiaCaptura;
+    const sw = (k, ico, titulo, sub) => `<label class="sw-card ${c[k] ? 'on' : ''}"><input type="checkbox" data-cfg="${k}" ${c[k] ? 'checked' : ''}>
+      <span class="sw-ico">${ico}</span><span class="sw-txt"><b>${titulo}</b><small>${sub}</small></span><span class="sw"><i></i></span></label>`;
+    const regras = S.store.regrasAlerta;
     const log = S.store.alertas;
+    const f = S.ui.filtros;
+    const espForm = f.regraNome ? S.especiePorNome.get(String(f.regraNome).toLowerCase()) : null;
+    const vazio = (v) => (v ? esc(v) : '');
     return `
-      <h3>O que avisar</h3>
-      ${tg('alertaShiny', '✨ Avisar quando eu capturar um <b>shiny</b>')}
-      ${tg('alertaEspecies', '🎯 Avisar quando eu capturar uma das espécies marcadas abaixo')}
-      ${tg('som', '🔊 Tocar som')}
-      ${tg('notificacao', '🖥 Notificação do Windows (funciona com o jogo minimizado)')}
-      <div class="linha"><button class="b sec" data-acao="testar-alerta">Testar alerta</button></div>
-      <h3>Espécies marcadas</h3>
-      <div class="linha"><input list="pic-especies" placeholder="Nome do Pokémon…" data-campo="cap-nome" style="flex:1">
-        <datalist id="pic-especies">${opcoesEspecies()}</datalist>
-        <button class="b" data-acao="add-cap">Marcar</button></div>
-      <div style="margin-top:8px">${vc.length ? vc.map((v, i) => `<span class="pill">${esc(v.nome)} <a data-acao="rm-cap" data-i="${i}" style="cursor:pointer;color:#ff8a8a">✕</a></span>`).join(' ') : '<span class="dim">Nenhuma espécie marcada.</span>'}</div>
-      <h3>Últimos avisos</h3>
-      ${log.length ? `<table>${log.slice(0, 40).map((a) => `<tr><td class="dim" style="white-space:nowrap">${dataHora(a.t)}</td><td><b>${esc(a.titulo)}</b><br><span class="dim">${esc(a.corpo)}</span></td></tr>`).join('')}</table>
-        <div class="linha" style="margin-top:6px"><button class="b sec" data-acao="limpar-alertas">Limpar</button></div>` : '<div class="dim">Nenhum aviso ainda.</div>'}
-      <h3>Diagnóstico</h3>
-      <div class="dim">Versão ${VERSAO} · conexão: ${S.ws ? ['conectando', 'aberta', 'fechando', 'fechada'][S.ws.readyState] : 'nenhuma'} ·
-        espécies: ${fmt(S.especies.size)} · itens: ${fmt(S.itens.size)} · tabela de tipos: ${S.tabelaTipos ? 'do jogo' : 'padrão'}</div>
-      <div class="linha" style="margin-top:6px"><button class="b sec" data-acao="copiar-diag">Copiar diagnóstico</button>
-        <span class="dim">Se algo não aparecer, me mande isso (não tem senha nem token).</span></div>
+      <div class="sw-grade">
+        ${sw('alertaShiny', '✨', 'Shiny capturado', 'Sempre avisa, sem filtro')}
+        ${sw('alertaEspecies', '🎯', 'Minhas regras', 'Avisa quando uma regra bater')}
+        ${sw('som', '🔊', 'Som', 'Toca um aviso sonoro')}
+        ${sw('notificacao', '🖥', 'Notificação', 'Do Windows, mesmo minimizado')}
+      </div>
+
+      <h3>Nova regra</h3>
+      <div class="form-regra">
+        <div class="fr-topo">
+          <div class="fr-arte">${espForm ? imgSprite(espForm.looktype, 56) : '<span class="fr-qualquer">★</span>'}</div>
+          <div class="fr-campos">
+            <label class="rot-c">Pokémon <small>(deixe vazio para qualquer um)</small></label>
+            <input list="pic-especies" placeholder="Ex.: Dragonite" data-campo="regra-nome" value="${vazio(f.regraNome)}">
+            <datalist id="pic-especies">${opcoesEspecies()}</datalist>
+          </div>
+        </div>
+        <div class="fr-grade">
+          <label><span class="rot-c">Potência mín.</span>
+            <select data-campo="regra-p">${[[0, 'Qualquer'], [2, 'P2+'], [3, 'P3+'], [4, 'P4+'], [5, 'P5']].map(([v, n]) => `<option value="${v}" ${Number(f.regraP || 0) === v ? 'selected' : ''}>${n}</option>`).join('')}</select></label>
+          <label><span class="rot-c">IV mín.</span><input type="text" inputmode="numeric" placeholder="ex.: 120" data-campo="regra-iv" value="${vazio(f.regraIV)}"></label>
+          <label><span class="rot-c">Qualidade mín.</span><input type="text" inputmode="decimal" placeholder="ex.: 1,5" data-campo="regra-q" value="${vazio(f.regraQ)}"></label>
+          <label><span class="rot-c">Nota (N) mín.</span><input type="text" inputmode="decimal" placeholder="ex.: 3,5" data-campo="regra-n" value="${vazio(f.regraN)}"></label>
+        </div>
+        <div class="linha" style="margin-top:8px">
+          <label class="tg" style="padding:0"><input type="checkbox" data-campo="regra-shiny" ${f.regraShiny ? 'checked' : ''}> Só shiny</label>
+          <span class="sp"></span>
+          <button class="b" data-acao="add-regra">＋ Criar regra</button>
+        </div>
+        <div class="dim" style="margin-top:6px">Todos os filtros preenchidos precisam bater. A nota é calculada com a mesma conta do jogo.</div>
+      </div>
+
+      <h3>Minhas regras (${regras.length})</h3>
+      ${regras.length ? `<div class="regras">${regras.map((r, i) => {
+        const esp = r.speciesId != null ? S.especies.get(Number(r.speciesId)) : null;
+        return `<div class="regra ${r.ativo ? '' : 'off'}">
+          <div class="rg-arte">${esp ? imgSprite(esp.looktype, 44) : '<span class="fr-qualquer peq">★</span>'}</div>
+          <div class="rg-info"><div class="rg-nome">${esc(r.nome)}</div><div class="rg-crit">${chipsRegra(r)}</div>
+            <div class="dim">${r.disparos ? `disparou ${fmt(r.disparos)}×` : 'ainda não disparou'}</div></div>
+          <label class="sw mini" title="Ligar/desligar"><input type="checkbox" data-regra-on="${i}" ${r.ativo ? 'checked' : ''}><i></i></label>
+          <button class="x-peq" data-acao="rm-regra" data-i="${i}" title="Apagar">✕</button>
+        </div>`;
+      }).join('')}</div>` : '<div class="vazio">Nenhuma regra ainda. Crie uma acima. Ex.: <b>Qualquer Pokémon · N ≥ 3,5</b>.</div>'}
+
+      <div class="linha" style="margin-top:14px"><h3 style="margin:0">Últimos avisos</h3><span class="sp"></span>
+        <button class="b sec" data-acao="testar-alerta">Testar</button>${log.length ? '<button class="b sec" data-acao="limpar-alertas">Limpar</button>' : ''}</div>
+      ${log.length ? `<div class="avisos">${log.slice(0, 40).map((a) => `<div class="aviso-it ${a.tipo || ''}">
+          <div class="av-arte">${a.x?.look != null ? imgSprite(a.x.look, 40) : `<span class="av-ico">${a.tipo === 'mercado' ? '🛒' : a.tipo === 'shiny' ? '✨' : '🔔'}</span>`}</div>
+          <div class="av-info"><b>${esc(a.titulo)}</b>${a.x?.medidas ? `<div class="selos">${selosMedidas(a.x.medidas)}</div>` : `<div class="dim">${esc(a.corpo)}</div>`}</div>
+          <div class="av-hora">${hora(a.t)}<br><span class="dim">${new Date(a.t).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })}</span></div>
+        </div>`).join('')}</div>` : '<div class="vazio">Nenhum aviso ainda.</div>'}
+
+      <details class="diag"><summary>Diagnóstico</summary>
+        <div class="dim">Versão ${VERSAO} · conexão: ${S.ws ? ['conectando', 'aberta', 'fechando', 'fechada'][S.ws.readyState] : 'nenhuma'} ·
+          espécies: ${fmt(S.especies.size)} · itens: ${fmt(S.itens.size)} · tabela de tipos: ${S.tabelaTipos ? 'do jogo' : 'padrão'}</div>
+        <div class="linha" style="margin-top:6px"><button class="b sec" data-acao="copiar-diag">Copiar diagnóstico</button>
+          <span class="dim">Não tem senha nem token.</span></div>
+      </details>
     `;
   }
   function diagnostico() {
@@ -1122,8 +1459,8 @@
       <div class="linha">${w.tipo === 'pokemon' ? imgSprite(S.especies.get(Number(w.id))?.looktype, 40) : ''}<span class="nome">${esc(w.nome)}</span>${tipos}<span class="sp"></span>
         <button class="b sec" data-acao="editar-mk" data-i="${i}">Alvo</button><button class="b perigo" data-acao="rm-mk" data-i="${i}">✕</button></div>
       ${u ? `<div class="grade" style="margin-top:8px">
-          <div class="card"><div class="rot">Menor (coins)</div><div class="val">${curto(u.minGold)}</div><div class="sub">${variacao(u.minGold, anteriorGold)} mínimo visto ${curto(reg.menorGold)}</div></div>
-          <div class="card"><div class="rot">Menor (gemas)</div><div class="val">${curto(u.minOrb)}</div><div class="sub">mínimo visto ${curto(reg.menorOrb)}</div></div>
+          <div class="card"><div class="rot">Menor (coins)</div><div class="val">${curto(u.minGold)}</div><div class="sub">${variacao(u.minGold, anteriorGold) ? variacao(u.minGold, anteriorGold) + ' desde a última leitura' : 'sem mudança'}</div><div class="sub">menor já visto: ${curto(reg.menorGold)}</div></div>
+          <div class="card"><div class="rot">Menor (gemas)</div><div class="val">${curto(u.minOrb)}</div><div class="sub">menor já visto: ${curto(reg.menorOrb)}</div></div>
           <div class="card"><div class="rot">Anúncios</div><div class="val">${fmt(u.anuncios)}</div><div class="sub">${u.shinys ? `${fmt(u.shinys)} shiny · ` : ''}atualizado ${dataHora(u.t)}</div></div>
         </div>
         <div style="margin-top:6px">${sparkline(hist.map((h) => h[1]), 440, 36)}</div>`
@@ -1133,48 +1470,93 @@
   }
 
   /* ---------------- PROGRESSO ---------------- */
+  function ritmoNaJanela(min) {
+    const agora = Date.now();
+    const pts = S.store.ritmo.filter((p) => agora - p[0] <= min * 60_000);
+    if (S.eu && Number.isFinite(Number(S.eu.xp))) pts.push([agora, Number(S.eu.xp), Number(S.eu.gold) || 0]);
+    if (pts.length < 2) return null;
+    const a = pts[0]; const b = pts[pts.length - 1];
+    const ms = b[0] - a[0];
+    if (ms < 60_000) return null;
+    return { ms, xpH: ((b[1] - a[1]) / ms) * 3600_000, goldH: ((b[2] - a[2]) / ms) * 3600_000, xp: b[1] - a[1], gold: b[2] - a[2] };
+  }
   function telaProgresso() {
     const eu = S.eu;
-    const faixa = S.ui.filtros.progFaixa ?? '7d';
+    const f = S.ui.filtros;
+    const faixa = f.progFaixa ?? '24h';
+    const janela = Number(f.progJanela ?? 30);
     const ms = { '24h': 864e5, '7d': 7 * 864e5, '30d': 30 * 864e5, tudo: Infinity }[faixa];
     const pts = S.store.progresso.filter((p) => Date.now() - p.t <= ms);
     const ini = pts[0];
-    const fim = eu ? { level: Number(eu.level), xp: Number(eu.xp), gold: Number(eu.gold), orbs: Number(eu.orbs) || 0, diamonds: Number(eu.diamonds) || 0,
+    const fim = eu ? { t: Date.now(), level: Number(eu.level), xp: Number(eu.xp), gold: Number(eu.gold), orbs: Number(eu.orbs) || 0, diamonds: Number(eu.diamonds) || 0,
       dex: eu.pokedex ? Object.keys(eu.pokedex).length : 0, pks: eu.pokemons?.length ?? 0 } : pts[pts.length - 1];
-    const delta = (k) => (ini && fim ? fim[k] - ini[k] : null);
-    const d = (k) => { const v = delta(k); return v == null ? '' : `<span class="${v >= 0 ? 'pos' : 'neg'}">${v >= 0 ? '+' : ''}${curto(v)}</span> no período`; };
-    const pctNivel = eu && eu.xpProximo ? Math.min(100, ((eu.xp - eu.xpNivel) / Math.max(1, eu.xpProximo - eu.xpNivel)) * 100) : null;
-    // Resumo por dia.
-    const porDia = new Map();
-    for (const p of S.store.progresso) {
-      const dia = new Date(p.t).toLocaleDateString('pt-BR');
-      const r = porDia.get(dia) ?? { ini: p, fim: p };
-      r.fim = p;
-      porDia.set(dia, r);
+    if (!fim) return '<div class="vazio">Abra o jogo e entre na conta: o progresso começa a ser registrado na hora.</div>';
+    const serie = [...pts, ...(eu ? [fim] : [])];
+    const delta = (k) => (ini ? fim[k] - ini[k] : null);
+    const d = (k) => { const v = delta(k); return v == null ? '<span class="dim">—</span>' : `<span class="${v >= 0 ? 'pos' : 'neg'}">${v >= 0 ? '+' : ''}${curto(v)}</span> no período`; };
+    const faixaNv = eu && eu.xpProximo ? Math.max(1, eu.xpProximo - eu.xpNivel) : null;
+    const pctNivel = faixaNv ? Math.min(100, ((eu.xp - eu.xpNivel) / faixaNv) * 100) : null;
+    // Ritmo
+    const r = ritmoNaJanela(janela);
+    const faltaXp = eu && eu.xpProximo ? Number(eu.xpProximo) - Number(eu.xp) : null;
+    const eta = r && r.xpH > 0 && faltaXp > 0 ? (faltaXp / r.xpH) * 3600_000 : null;
+    const porNivel = r && r.xpH > 0 && faixaNv ? (faixaNv / r.xpH) * 3600_000 : null;
+    const chegada = eta ? new Date(Date.now() + eta) : null;
+    const quando = chegada ? (chegada.toDateString() === new Date().toDateString() ? `hoje às ${hora(chegada)}` : dataHora(chegada)) : '';
+    // Barras de ganho: por hora (24h) ou por dia.
+    const porHoraB = faixa === '24h';
+    const baldes = new Map();
+    for (const p of serie) {
+      const dt = new Date(p.t);
+      const chave = porHoraB ? `${dt.toDateString()} ${dt.getHours()}` : dt.toDateString();
+      const b = baldes.get(chave) ?? { ini: p, fim: p, t: p.t };
+      b.fim = p;
+      baldes.set(chave, b);
     }
-    const dias = [...porDia.entries()].slice(-14).reverse();
-    if (!fim) return '<div class="vazio">Abra o jogo e entre na conta: o progresso começa a ser registrado a cada 10 minutos.</div>';
+    const lista = [...baldes.values()];
+    // O ganho de cada balde conta a partir do fim do anterior, para não perder o que caiu entre eles.
+    const barras = (campo) => lista.map((b, i) => {
+      const base = i > 0 ? lista[i - 1].fim[campo] : b.ini[campo];
+      const dt = new Date(b.t);
+      return { v: b.fim[campo] - base, rot: porHoraB ? `${dt.getHours()}h` : dt.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' }),
+        dica: porHoraB ? `${dt.toLocaleDateString('pt-BR')} ${dt.getHours()}h` : dt.toLocaleDateString('pt-BR') };
+    }).slice(porHoraB ? -24 : -30);
+    const grafTipo = f.progGraf ?? 'barras';
     return `
-      <div class="linha">${['24h', '7d', '30d', 'tudo'].map((f) => `<button class="aba ${f === faixa ? 'sel' : ''}" data-faixa="${f}">${f}</button>`).join('')}</div>
-      <h3>Agora</h3>
-      <div class="grade">
-        <div class="card"><div class="rot">Nível</div><div class="val">${fmt(fim.level)}</div><div class="sub">${d('level')}</div>
-          ${pctNivel != null ? `<div class="barra"><i style="width:${pctNivel}%"></i></div><div class="sub">${pctNivel.toFixed(1).replace('.', ',')}% do nível</div>` : ''}</div>
+      <h3>Ritmo agora</h3>
+      <div class="linha seg">${[10, 30, 60, 180].map((m) => `<button class="aba ${m === janela ? 'sel' : ''}" data-janela="${m}">${m < 60 ? m + ' min' : m / 60 + ' h'}</button>`).join('')}
+        <span class="dim">${r ? `base: últimos ${duracao(r.ms)}` : ''}</span></div>
+      ${r ? `<div class="ritmo">
+          <div class="rt xp"><div class="rot">XP por hora</div><div class="val">${curto(r.xpH)}</div><div class="sub">+${curto(r.xp)} nos últimos ${duracao(r.ms)}</div></div>
+          <div class="rt gold"><div class="rot">Coins por hora</div><div class="val ${r.goldH < 0 ? 'neg' : ''}">${r.goldH >= 0 ? '' : '−'}${curto(Math.abs(r.goldH))}</div><div class="sub">${r.gold >= 0 ? '+' : ''}${curto(r.gold)} no saldo</div></div>
+          <div class="rt nivel"><div class="rot">Próximo nível (${fmt(Number(eu?.level) + 1)})</div><div class="val">${eta ? '~' + duracao(eta) : '—'}</div><div class="sub">${eta ? quando : 'sem XP nessa janela'}</div>
+            ${pctNivel != null ? `<div class="barra"><i style="width:${pctNivel}%"></i></div><div class="sub">${pctNivel.toFixed(1).replace('.', ',')}% · faltam ${curto(faltaXp)} XP</div>` : ''}</div>
+          <div class="rt"><div class="rot">Um nível inteiro leva</div><div class="val">${porNivel ? '~' + duracao(porNivel) : '—'}</div><div class="sub">${porNivel ? `≈ ${(24 * 3600_000 / porNivel).toFixed(1).replace('.', ',')} níveis por dia` : ''}</div></div>
+        </div>
+        <div class="dim" style="margin-top:4px">Coins por hora é a variação do saldo: compras no mercado entram como gasto.</div>`
+        : '<div class="vazio peq">Precisa de pelo menos 1 minuto de jogo com a extensão aberta. As medições são a cada 30 s.</div>'}
+
+      <div class="linha" style="margin-top:14px"><h3 style="margin:0">Período</h3><span class="sp"></span>
+        ${['24h', '7d', '30d', 'tudo'].map((x) => `<button class="aba ${x === faixa ? 'sel' : ''}" data-faixa="${x}">${x}</button>`).join('')}</div>
+      <div class="grade" style="margin-top:8px">
+        <div class="card"><div class="rot">Nível</div><div class="val">${fmt(fim.level)}</div><div class="sub">${d('level')}</div></div>
         <div class="card"><div class="rot">XP total</div><div class="val">${curto(fim.xp)}</div><div class="sub">${d('xp')}</div></div>
         <div class="card"><div class="rot">Coins</div><div class="val">${curto(fim.gold)}</div><div class="sub">${d('gold')}</div></div>
         <div class="card"><div class="rot">Gemas</div><div class="val">${curto(fim.orbs)}</div><div class="sub">${d('orbs')}</div></div>
-        <div class="card"><div class="rot">Diamantes</div><div class="val">${curto(fim.diamonds)}</div><div class="sub">${d('diamonds')}</div></div>
         <div class="card"><div class="rot">Pokédex</div><div class="val">${fmt(fim.dex)}</div><div class="sub">${d('dex')}</div></div>
-        <div class="card"><div class="rot">Pokémon na conta</div><div class="val">${fmt(fim.pks)}</div><div class="sub">${d('pks')}</div></div>
+        <div class="card"><div class="rot">Pokémon</div><div class="val">${fmt(fim.pks)}</div><div class="sub">${d('pks')}</div></div>
       </div>
-      <h3>XP total</h3>${grafico(pts, 'xp', '#b78cff')}
-      <h3>Coins</h3>${grafico(pts, 'gold', '#ffd166')}
-      <h3>Pokédex</h3>${grafico(pts, 'dex', '#3ecf8e')}
-      <h3>Por dia</h3>
-      ${dias.length ? `<table><tr><th>Dia</th><th>Nível</th><th>XP ganho</th><th>Coins</th><th>Dex</th></tr>
-        ${dias.map(([dia, r]) => `<tr><td>${dia}</td><td>${fmt(r.fim.level)}</td><td class="pos">+${curto(r.fim.xp - r.ini.xp)}</td>
-          <td class="${r.fim.gold - r.ini.gold >= 0 ? 'pos' : 'neg'}">${curto(r.fim.gold - r.ini.gold)}</td><td>+${fmt(r.fim.dex - r.ini.dex)}</td></tr>`).join('')}</table>`
-        : '<div class="dim">Sem dados ainda.</div>'}
+
+      <div class="linha" style="margin-top:14px"><h3 style="margin:0">Gráficos</h3><span class="sp"></span>
+        <button class="aba ${grafTipo === 'barras' ? 'sel' : ''}" data-graf="barras">Ganho por ${porHoraB ? 'hora' : 'dia'}</button>
+        <button class="aba ${grafTipo === 'linha' ? 'sel' : ''}" data-graf="linha">Acumulado</button></div>
+      <div class="graf-card"><div class="graf-tit"><span style="color:#b78cff">●</span> XP ${grafTipo === 'barras' ? `ganho por ${porHoraB ? 'hora' : 'dia'}` : 'total'}</div>
+        ${grafTipo === 'barras' ? graficoBarras(barras('xp'), '#9b6bff', 'XP') : graficoArea(serie.map((p) => [p.t, p.xp]), '#b78cff', 'XP')}</div>
+      <div class="graf-card"><div class="graf-tit"><span style="color:#ffd166">●</span> Coins ${grafTipo === 'barras' ? `por ${porHoraB ? 'hora' : 'dia'} (variação do saldo)` : '(saldo)'}</div>
+        ${grafTipo === 'barras' ? graficoBarras(barras('gold'), '#ffc940', 'Coins') : graficoArea(serie.map((p) => [p.t, p.gold]), '#ffd166', 'Coins')}</div>
+      <div class="graf-card"><div class="graf-tit"><span style="color:#3ecf8e">●</span> Nível</div>
+        ${graficoArea(serie.map((p) => [p.t, p.level]), '#3ecf8e', 'Nível')}</div>
+      <div class="dim">Passe o mouse nos pontos e nas barras para ver o valor.</div>
     `;
   }
 
@@ -1216,8 +1598,8 @@
     if (iv != null) out.push(`<span class="selo t${nivelSelo(iv, [60, 100, 130, 150])}">IV ${fmt(iv)}</span>`);
     const q = Number(p.quality ?? p.qualidade);
     if (q > 0) out.push(`<span class="selo t${nivelSelo(q, [1.0, 1.3, 1.5, 1.7])}">Q ${q.toFixed(3).replace('.', ',')}</span>`);
-    const n = Number(p.nota);
-    if (n > 0) out.push(`<span class="selo t${nivelSelo(n, [1.0, 1.5, 2.0, 2.5])}">N ${n.toFixed(3).replace('.', ',')}</span>`);
+    const n = notaDe(p) ?? 0;
+    if (n > 0) out.push(`<span class="selo t${nivelSelo(n, [2, 3, 3.5, 4.5])}">N ${n.toFixed(3).replace('.', ',')}</span>`);
     return out.join('');
   }
   const STATS = [['baseHp', 'HP'], ['baseAtk', 'Atk'], ['baseDef', 'Def'], ['baseSpAtk', 'SpA'], ['baseSpDef', 'SpD'], ['baseSpeed', 'Vel']];
@@ -1238,7 +1620,7 @@
     if (f.meusTipo) lista = lista.filter((p) => tiposDe(p).includes(f.meusTipo));
     if (busca) lista = lista.filter((p) => String(p.nome ?? nomeEspecie(p.speciesId)).toLowerCase().includes(busca));
     const ord = f.meusOrdem ?? 'nivel';
-    const chave = { nivel: (p) => -(Number(p.level) || 0), iv: (p) => -(ivTotal(p) || 0), q: (p) => -(Number(p.quality) || 0), nome: (p) => String(p.nome ?? nomeEspecie(p.speciesId)) };
+    const chave = { nivel: (p) => -(Number(p.level) || 0), iv: (p) => -(ivTotal(p) || 0), q: (p) => -(Number(p.quality) || 0), n: (p) => -(notaDe(p) || 0), nome: (p) => String(p.nome ?? nomeEspecie(p.speciesId)) };
     lista.sort((a, b) => {
       if (a.id === eu.activeId) return -1;
       if (b.id === eu.activeId) return 1;
@@ -1290,7 +1672,7 @@
       <div class="linha" style="margin-top:6px">
         <select data-filtro="meusSo"><option value="">Todos</option><option value="equipe" ${f.meusSo === 'equipe' ? 'selected' : ''}>Equipe</option><option value="shiny" ${f.meusSo === 'shiny' ? 'selected' : ''}>Shiny</option></select>
         <select data-filtro="meusTipo"><option value="">Todos os tipos</option>${TIPOS.map((t) => `<option value="${t}" ${f.meusTipo === t ? 'selected' : ''}>${NOME_TIPO[t]}</option>`).join('')}</select>
-        <select data-filtro="meusOrdem">${[['nivel', 'Nível'], ['iv', 'IV'], ['q', 'Qualidade'], ['nome', 'Nome']].map(([v, n]) => `<option value="${v}" ${ord === v ? 'selected' : ''}>Ordem: ${n}</option>`).join('')}</select>
+        <select data-filtro="meusOrdem">${[['nivel', 'Nível'], ['iv', 'IV'], ['q', 'Qualidade'], ['n', 'Nota'], ['nome', 'Nome']].map(([v, n]) => `<option value="${v}" ${ord === v ? 'selected' : ''}>Ordem: ${n}</option>`).join('')}</select>
       </div>
       <div class="dim" style="margin:8px 0">${fmt(lista.length)} Pokémon · toque num card para ver forças, fraquezas e status.</div>
       <div class="pk-grade">${mostrar.map(cartao).join('')}</div>
@@ -1368,15 +1750,37 @@
     const corpo = S.ui.corpo;
     const campo = (nome) => corpo.querySelector(`[data-campo="${nome}"]`);
     corpo.querySelectorAll('[data-cfg]').forEach((el) => {
-      el.onchange = () => { S.store.config[el.dataset.cfg] = el.checked; salvar('config'); if (el.dataset.cfg === 'vigiaAuto' && el.checked) vigiarMercado(false); };
+      el.onchange = () => { S.store.config[el.dataset.cfg] = el.checked; salvar('config'); if (el.dataset.cfg === 'vigiaAuto' && el.checked) vigiarMercado(false); el.closest('.sw-card')?.classList.toggle('on', el.checked); };
     });
     corpo.querySelectorAll('[data-cfg-sel]').forEach((el) => {
       el.onchange = () => { S.store.config[el.dataset.cfgSel] = Number(el.value); salvar('config'); };
     });
+    corpo.querySelectorAll('[data-regra-on]').forEach((el) => {
+      el.onchange = () => { const r = S.store.regrasAlerta[Number(el.dataset.regraOn)]; if (r) { r.ativo = el.checked; salvar('regrasAlerta'); renderizar(); } };
+    });
+    const formRegra = { 'regra-nome': 'regraNome', 'regra-p': 'regraP', 'regra-iv': 'regraIV', 'regra-q': 'regraQ', 'regra-n': 'regraN' };
+    for (const [c, k] of Object.entries(formRegra)) {
+      const el = campo(c);
+      if (!el) continue;
+      el.addEventListener('input', () => { S.ui.filtros[k] = el.value; });
+      el.addEventListener('change', () => { S.ui.filtros[k] = el.value; });
+    }
+    const nomeRegra = campo('regra-nome');
+    if (nomeRegra) {
+      nomeRegra.addEventListener('change', () => {
+        const esp = S.especiePorNome.get(nomeRegra.value.trim().toLowerCase());
+        const arte = corpo.querySelector('.fr-arte');
+        if (arte) { arte.innerHTML = esp ? imgSprite(esp.looktype, 56) : '<span class="fr-qualquer">★</span>'; hidratarSprites(arte); }
+      });
+    }
+    const shinyRegra = campo('regra-shiny');
+    if (shinyRegra) shinyRegra.onchange = () => { S.ui.filtros.regraShiny = shinyRegra.checked; };
     corpo.querySelectorAll('[data-filtro]').forEach((el) => {
       el.onchange = () => { S.ui.filtros[el.dataset.filtro] = el.value; renderizar(); };
     });
     corpo.querySelectorAll('[data-faixa]').forEach((el) => { el.onclick = () => { S.ui.filtros.progFaixa = el.dataset.faixa; renderizar(); }; });
+    corpo.querySelectorAll('[data-janela]').forEach((el) => { el.onclick = () => { S.ui.filtros.progJanela = Number(el.dataset.janela); renderizar(); }; });
+    corpo.querySelectorAll('[data-graf]').forEach((el) => { el.onclick = () => { S.ui.filtros.progGraf = el.dataset.graf; renderizar(); }; });
     corpo.querySelectorAll('[data-combo]').forEach((el) => {
       el.onchange = () => { const c = S.ui.filtros.tiposCombo ?? ['', '']; c[Number(el.dataset.combo)] = el.value; S.ui.filtros.tiposCombo = c; renderizar(); };
     });
@@ -1409,20 +1813,36 @@
           case 'testar-alerta':
             alertar('✨ Teste de alerta', 'É assim que o aviso vai aparecer.', 'shiny');
             break;
-          case 'add-cap': {
-            const nome = campo('cap-nome')?.value.trim().toLowerCase();
-            const esp = S.especiePorNome.get(nome);
-            if (!esp) { toast('Não achei essa espécie', 'Escolha um nome da lista.', ''); break; }
-            if (!S.store.vigiaCaptura.some((v) => v.speciesId === esp.pokeId)) S.store.vigiaCaptura.push({ speciesId: esp.pokeId, nome: esp.name });
-            salvar('vigiaCaptura');
+          case 'add-regra': {
+            const nomeTxt = (campo('regra-nome')?.value ?? '').trim();
+            let esp = null;
+            if (nomeTxt) {
+              esp = S.especiePorNome.get(nomeTxt.toLowerCase());
+              if (!esp) { toast('Não achei essa espécie', 'Escolha um nome da lista ou deixe vazio.', ''); break; }
+            }
+            const num = (nome) => Math.max(0, Number(String(campo(nome)?.value ?? '').trim().replace(/\./g, (m, i, t) => (/,/.test(t) ? '' : m)).replace(',', '.')) || 0);
+            const r = novaRegra({
+              speciesId: esp?.pokeId ?? null, nome: esp?.name ?? 'Qualquer Pokémon',
+              minP: num('regra-p'), minIV: num('regra-iv'), minQ: num('regra-q'), minN: num('regra-n'),
+              soShiny: !!campo('regra-shiny')?.checked,
+            });
+            S.store.regrasAlerta.unshift(r);
+            salvar('regrasAlerta');
+            if (!S.store.config.alertaEspecies) { S.store.config.alertaEspecies = true; salvar('config'); }
+            for (const k of ['regraNome', 'regraP', 'regraIV', 'regraQ', 'regraN', 'regraShiny']) delete S.ui.filtros[k];
+            toast('Regra criada', `${r.nome} · ${chipsRegra(r).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim()}`, '');
             renderizar();
             break;
           }
-          case 'rm-cap':
-            S.store.vigiaCaptura.splice(i, 1);
-            salvar('vigiaCaptura');
-            renderizar();
+          case 'rm-regra': {
+            const r = S.store.regrasAlerta[i];
+            if (r && confirmar(`Apagar a regra de ${r.nome}?`)) {
+              S.store.regrasAlerta.splice(i, 1);
+              salvar('regrasAlerta');
+              renderizar();
+            }
             break;
+          }
           case 'limpar-alertas':
             S.store.alertas = [];
             salvar('alertas');
