@@ -1022,6 +1022,13 @@
   .chip.x2 { outline: 2px solid #ffd166; }
   .pill { display: inline-block; font-size: 10px; padding: 1px 6px; border-radius: 99px; background: #3b2636; color: #e3d2ec; margin-right: 3px; }
   .pill.shiny { background: #6b5200; color: #ffe27a; }
+  .pill.golpe.fis { background: #4a2a22; color: #ffc2a8; }
+  .pill.golpe.esp { background: #2c2a52; color: #c9c2ff; }
+  .pill.golpe.sta { background: #26403a; color: #b5f0dc; }
+  .pill.golpe.bloq { opacity: .4; }
+  .upar { margin-top: 8px; }
+  .upar-barra { display: flex; height: 8px; border-radius: 99px; overflow: hidden; background: #3b2636; margin: 4px 0; }
+  .upar-barra i.fis { background: #ff8a5c; } .upar-barra i.esp { background: #8c7bff; }
   .item-vigia { background: #2e1f2a; border: 1px solid #4a2c44; border-radius: 9px; padding: 10px; margin-bottom: 8px; }
   .item-vigia .nome { font-weight: 800; font-size: 14px; }
   .barra { height: 6px; background: #3b2636; border-radius: 3px; overflow: hidden; margin-top: 4px; }
@@ -1607,6 +1614,49 @@
     if (!esp) return '';
     return `<div class="stats">${STATS.map(([k, r]) => { const v = Number(esp[k]) || 0; return `<div class="st"><span>${r}</span><i><b style="width:${Math.min(100, (v / 180) * 100)}%;background:${v >= 120 ? '#3ecf8e' : v >= 90 ? '#8bd450' : v >= 60 ? '#ffd166' : '#ff8a5c'}"></b></i><em>${v}</em></div>`; }).join('')}</div>`;
   }
+  /* ---------------- O QUE UPAR (categoria dos golpes, vinda do jogo) ---------------- */
+  const CAT_GOLPE = {
+    PHYSICAL: { ic: '⚔️', nome: 'Físico', cls: 'fis' },
+    SPECIAL: { ic: '✨', nome: 'Especial', cls: 'esp' },
+    STATUS: { ic: '🛡️', nome: 'Status', cls: 'sta' },
+  };
+  const catGolpe = (a) => CAT_GOLPE[String(a?.category ?? '').toUpperCase()] ?? null;
+  function pillGolpe(a, liberado = true) {
+    const c = catGolpe(a);
+    const tp = normTipo(a.type);
+    const cor = tp ? COR_TIPO[tp] : null;
+    return `<span class="pill golpe ${c ? c.cls : ''} ${liberado ? '' : 'bloq'}" title="${c ? c.nome : 'Categoria desconhecida'}${tp ? ' · ' + NOME_TIPO[tp] : ''}"${cor ? ` style="border-left:3px solid ${cor}"` : ''}>${c ? c.ic + ' ' : ''}${esc(a.name)}${a.power ? ' · ' + a.power : ''}${a.learnLevel > 1 ? ' · Nv ' + a.learnLevel : ''}</span>`;
+  }
+  // nivel = nível do seu Pokémon (só conta golpes já liberados); sem nível = todos os golpes da espécie.
+  function blocoUpar(esp, nivel) {
+    const golpes = Array.isArray(esp?.attacks) ? esp.attacks : [];
+    if (!golpes.length) return '';
+    const nv = Number(nivel) || 0;
+    const liberados = nv ? golpes.filter((a) => (Number(a.learnLevel) || 0) <= nv) : golpes;
+    let fis = 0, espc = 0, nFis = 0, nEsp = 0, nSta = 0;
+    for (const a of liberados) {
+      const k = String(a.category ?? '').toUpperCase();
+      const pw = Number(a.power) || 0;
+      if (k === 'PHYSICAL') { fis += pw; nFis++; } else if (k === 'SPECIAL') { espc += pw; nEsp++; } else if (k === 'STATUS') nSta++;
+    }
+    const tot = fis + espc;
+    let rec;
+    if (!tot) rec = '<b>Sem golpes de dano liberados</b> — os golpes de Status dependem do efeito.';
+    else {
+      const pf = Math.round((fis / tot) * 100);
+      if (pf >= 65) rec = `<b>Upe ATK</b> (${pf}% do poder dos golpes é Físico). Para aguentar golpes físicos, DEF.`;
+      else if (pf <= 35) rec = `<b>Upe SP.ATK</b> (${100 - pf}% do poder dos golpes é Especial). Para aguentar golpes especiais, SP.DEF.`;
+      else rec = `<b>Misto</b> — ${pf}% Físico / ${100 - pf}% Especial. Divida entre ATK e SP.ATK, ou foque no lado dos golpes que você mais usa.`;
+    }
+    const pf2 = tot ? (fis / tot) * 100 : 0;
+    return `<div class="upar">
+      <h3>📊 O que upar${nv ? ` <span class="dim">(golpes liberados até o Nv ${fmt(nv)})</span>` : ''}</h3>
+      <div class="lin">${rec}</div>
+      ${tot ? `<div class="upar-barra" title="Poder Físico ${fmt(fis)} · Especial ${fmt(espc)}"><i class="fis" style="width:${pf2}%"></i><i class="esp" style="width:${100 - pf2}%"></i></div>` : ''}
+      <div class="dim">⚔️ ${nFis} Físico · ✨ ${nEsp} Especial · 🛡️ ${nSta} Status</div>
+      <div class="lin" style="margin-top:4px">${golpes.map((a) => pillGolpe(a, !nv || (Number(a.learnLevel) || 0) <= nv)).join(' ')}</div>
+    </div>`;
+  }
   function telaMeus() {
     const eu = S.eu;
     if (!eu?.pokemons) return '<div class="vazio">Entre no jogo para ver seus Pokémon.</div>';
@@ -1657,6 +1707,7 @@
         ${ab ? `<div class="pk-det">
           <div class="det">${blocoTipos(tipos)}</div>
           ${esp ? `<h3>Status base da espécie</h3>${barrasStats(esp)}` : ''}
+          ${esp ? blocoUpar(esp, p.level) : ''}
           ${pct != null ? `<div class="dim">XP no nível: ${fmt(p.xp - p.xpNivel)} / ${fmt(p.xpProximo - p.xpNivel)} (${pct.toFixed(1).replace('.', ',')}%)</div>` : ''}
         </div>` : ''}
       </div>`;
@@ -1720,7 +1771,7 @@
           <div class="lin"><b>Raridade:</b> ${RARIDADE_PT[c.rarity] ?? esc(c.rarity ?? '—')} · <b>Evolui para:</b> ${evo} · <b>Venda:</b> ${curto(c.sellValue)} · <b>XP base:</b> ${fmt(c.experience)}</div>
           <div class="lin"><b>Status:</b> HP ${fmt(c.baseHp)} · Atk ${fmt(c.baseAtk)} · Def ${fmt(c.baseDef)} · SpA ${fmt(c.baseSpAtk)} · SpD ${fmt(c.baseSpDef)} · Vel ${fmt(c.baseSpeed)}</div>
           ${blocoTipos(tiposDe(c))}
-          ${Array.isArray(c.attacks) && c.attacks.length ? `<div class="lin"><b>Golpes:</b> ${c.attacks.map((a) => `<span class="pill">${esc(a.name)}${a.power ? ' · ' + a.power : ''}${a.learnLevel > 1 ? ' · Nv ' + a.learnLevel : ''}</span>`).join(' ')}</div>` : ''}
+          ${blocoUpar(c)}
           ${Array.isArray(c.loot) && c.loot.length ? `<div class="lin"><b>Loot:</b> ${c.loot.map((l) => `<span class="pill">${esc(l.name ?? nomeItem(l.itemId ?? l.id))}</span>`).join(' ')}</div>` : ''}
         </div></td></tr>` : ''}`;
       }).join('')}</table>

@@ -17,8 +17,8 @@
 | 🔔 **Alertas** | Som, aviso na tela e notificação do Windows quando você captura um **shiny** ou uma espécie que você marcou |
 | 🛒 **Mercado** | Lista de Pokémon/itens com menor preço em coins e gemas, histórico, alvo de preço e avisos quando aparece, baixa ou bate o alvo |
 | 📈 **Progresso** | Nível, XP, coins, gemas, Pokédex e Pokémon ao longo do tempo, com resumo por dia |
-| 🎒 **Meus Pokémon** | Sua coleção em cards com sprite, selos de P/IV/Q, XP do nível, forças, fraquezas e status base |
-| 📖 **Pokédex** | Todas as espécies com filtros por tipo, raridade e o que falta registrar |
+| 🎒 **Meus Pokémon** | Sua coleção em cards com sprite, selos de P/IV/Q, XP do nível, forças, fraquezas, status base e **o que upar** (ATK ou SP.ATK, pela categoria dos golpes liberados) |
+| 📖 **Pokédex** | Todas as espécies com filtros por tipo, raridade e o que falta registrar, com golpes marcados por categoria (⚔️ Físico, ✨ Especial, 🛡️ Status) |
 | 🧪 **Tipos** | Tabela de efetividade do jogo e testador de combinações |
 
 ## 📦 Como instalar
